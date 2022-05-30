@@ -46,6 +46,7 @@ namespace Competition_task_2.Pages
 
                 IWebElement login = mydriver.FindElement(By.XPath("/html/body/div[2]/div/div/div[1]/div/div[4]/button"));
                 login.Click();
+
             }
 
             catch (Exception ex)

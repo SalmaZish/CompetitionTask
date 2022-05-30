@@ -30,14 +30,14 @@ namespace Competition_task_2.Utilities
         public void LoginFunction()
 
         {
-            string fileName = @"T:\Salma_Testing\IndustryConnect\Internship\Competition_Task\Competition task 2\InputFile\ExcelOperationsDetails.xlsx";
+            string fileName = @"T:\Salma_Testing\IndustryConnect\Internship\Competition_Task\Competition_SS\CompetitionTask\InputFile\ExcelOperationsDetails.xlsx";
             //open file and returns as stream
             stream = File.Open(fileName, FileMode.Open, FileAccess.Read);
             ExcelOperations.ReadDataTable(stream, "LoginSheet");
 
             //extent report
             extent = new ExtentReports();
-            var htmlReporter = new ExtentHtmlReporter(@"T:\Salma_Testing\IndustryConnect\Internship\Competition_Task\Competition task 2\InputFile\CommonDriver.html");
+            var htmlReporter = new ExtentHtmlReporter(@"T:\Salma_Testing\IndustryConnect\Internship\Competition_Task\Competition_SS\CompetitionTask\InputFile\CommonDriver.html");
             extent.AttachReporter(htmlReporter);
 
             //open chrome
